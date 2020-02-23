@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>     
+       var text="";
+       var i;
+      for (i = 1; i<=100; i++) {
+       
+        if(i%3==0||i.toString().indexOf(3)!=-1){//判断是否为3的倍数或是有没有含有数字"3"
+            text +="PA"+",";
+        }
+        else{ text +=i+","; }
+         
+      }
+      document.getElementById("demo").innerHTML=text;
+    </script>
+
+</body>
+</html>
